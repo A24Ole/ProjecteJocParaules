@@ -1,0 +1,40 @@
+:root {
+  --color-background: #323437;
+  --color-text: #d1d0c5;
+  --color-primary: #e2b714;
+  --color-secondary: #2c2e31;
+  --color-error: #ca4754;
+  --color-inactive: #666;
+
+  --font-family-main: 'Roboto Mono', monospace;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  font-family: var(--font-family-main);
+  color: var(--color-text);
+}
+
+button {
+  background: var(--color-primary);
+  border: none;
+  color: var(--color-secondary);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #f5c842;
+}
+
+input, select {
+  background-color: var(--color-text);
+  color: var(--color-secondary);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
