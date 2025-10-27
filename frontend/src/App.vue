@@ -16,7 +16,7 @@ let socket;
 
 function connectarAlServidor(name) {
   nomJugador.value = name;
-  socket = io('http://localhost:27344'); // Connect to the backend Socket.IO server
+  socket = io('http://projectejocparaules.daw.inspedralbes.cat:27921'); // Connect to the backend Socket.IO server
 
   socket.on('connect', () => {
     console.log('Conectado al servidor Socket.IO');

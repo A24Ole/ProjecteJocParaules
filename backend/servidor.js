@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*", 
+    origin: "http://projectejocparaules.daw.inspedralbes.cat", 
   }
 });
 
@@ -34,4 +34,4 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(27344);
+server.listen(27921);
